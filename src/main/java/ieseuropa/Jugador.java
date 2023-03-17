@@ -50,6 +50,10 @@ public class Jugador {
 		if (turno)
 			turno = false;
 	}
+	
+	public int numCartasMano () {
+		return cartasMano.size();
+	}
 
 	@Override
 	public String toString() {
