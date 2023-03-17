@@ -41,11 +41,20 @@ public class Jugador {
 		this.cartasMano = cartasMano;
 	}
 
+	public void empezarTurno () {
+		if (!turno)
+			turno = true;
+	}
+	
+	public void terminarTurno () {
+		if (turno)
+			turno = false;
+	}
+
 	@Override
 	public String toString() {
 		return "Jugador: nombre=" + nombre + ", posicion=" + posicion + ", turno=" + turno + ", cartasMano="
 				+ cartasMano;
 	}
-	
 	
 }
