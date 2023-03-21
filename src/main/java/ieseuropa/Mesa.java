@@ -36,8 +36,16 @@ public class Mesa {
 		
 	}
 	
-	public void barajarMazo () {
-		
+	public void barajarMazo (ArrayList <Carta> mazo) {
+		int i = 0;
+		while (i < 200) {
+			int num1 = (int)(Math.random() * 109);
+			int num2 = (int)(Math.random() * 109);
+			Carta aux = mazo.get(num1);
+			mazo.set(num1,mazo.get(num2));
+			mazo.set(num2, aux);
+			i++;
+		}
 	}
 	
 	public void RepartirAJugadores () {
