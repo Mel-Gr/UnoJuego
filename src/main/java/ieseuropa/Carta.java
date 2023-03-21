@@ -4,6 +4,11 @@ public class Carta {
 	private Color color;
 	private Num num;
 	
+	public Carta (Color color, Num num) {
+		this.color= color;
+		this.num = num;
+	}
+	
 	public Color getColor() {
 		return color;
 	}

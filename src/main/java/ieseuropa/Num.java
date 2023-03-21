@@ -9,6 +9,8 @@ public enum Num {
 	cinco,
 	seis,
 	siete,
+	ocho,
+	nueve,
 	mas2,
 	r,
 	p,

@@ -32,8 +32,20 @@ public class Mesa {
 		this.jugadores = jugadores;
 	}
 	
-	public void crearMazo () {
-		
+	public ArrayList <Carta> crearMazo () {
+		ArrayList <Carta> baraja = new ArrayList <Carta> ();
+		for (int i = 0; i<Color.values().length-1; i ++) {
+			baraja.add(new Carta(Color.values()[i], Num.cero));
+			for (int j = 1; j<Num.values().length-2; j ++) {
+				baraja.add(new Carta(Color.values()[i], Num.values()[j]));
+				baraja.add(new Carta(Color.values()[i], Num.values()[j]));
+			}
+		}
+		for (int i = 0; i < 4; i++) {
+			baraja.add(new Carta(Color.Negro, Num.c));
+			baraja.add(new Carta(Color.Negro, Num.mas4));
+		}
+		return baraja;
 	}
 	
 	public void barajarMazo (ArrayList <Carta> mazo) {
