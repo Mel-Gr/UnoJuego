@@ -15,6 +15,7 @@ public class Carta {
 	}
 	public void setNum(Num num) {
 		this.num = num;
+		
 	}
  
 	
